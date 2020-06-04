@@ -13,8 +13,8 @@
     <body>
 
         <!-- OFF-CANVAS -->
-        <div id="offcanvas-overlay" uk-offcanvas="overlay: true">
-            <div class="uk-offcanvas-bar">
+        <div id="offcanvas-overlay" uk-offcanvas="overlay: true; flip: true">
+            <div class="uk-offcanvas-bar" style="background: white; color: black;">
 
                 <button class="uk-offcanvas-close" type="button" uk-close></button>
 
@@ -63,20 +63,19 @@
             <!-- NAVBAR -->
             <div class="uk-position-top">
                 <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
-                    <nav class="uk-navbar  uk-margin uk-background-secondary uk-light" uk-navbar="mode: hover" style="position: relative; z-index: 980;">
-                        <div class="uk-navbar-left">
-                            <a class="uk-navbar-toggle" href="#" uk-toggle="target: #offcanvas-overlay">
-                                <span uk-navbar-toggle-icon></span>
-                        </div>
-
+                    <nav class="uk-navbar  uk-margin uk-background-secondary uk-light" uk-navbar="mode: hover" style="position: relative; z-index: 980; background: #223d74;">
+                        
                         <a href="" class="uk-navbar-item uk-logo">
                             <img data-src="images/brand.png" width="110" height="50" alt="" uk-img>
+                            <!-- <img data-src="images/logo-avec-fond-min.jpg" width="110" alt="" uk-img> -->
                         </a>
 
                         <div class="uk-navbar-right">
 
                             <ul class="uk-navbar-nav">
-                                <li class="uk-active"><a href="#">Active</a></li>
+                                <li class="uk-active">
+                                    <a href="#">Active</a>
+                                </li>
                                 <li>
                                     <a href="#" aria-expanded="false">Parent</a>
                                     <div class="uk-navbar-dropdown uk-navbar-dropdown-bottom-right">
@@ -87,7 +86,11 @@
                                         </ul>
                                     </div>
                                 </li>
-                                <li><a href="#">Item</a></li>
+                                <li>
+                                    <a class="uk-navbar-toggle" href="#" uk-toggle="target: #offcanvas-overlay">
+                                        <span uk-navbar-toggle-icon></span>
+                                    </a>
+                                </li>
                             </ul>
 
                         </div>
@@ -138,28 +141,42 @@
             <!-- NOS VALEURS -->
             <div class="uk-section">
                 <div class="uk-container">
-                    <h1 class="uk-heading-small uk-text-center">Nos valeurs</h1>
-
-                    <div class="uk-child-width-expand@s uk-text-center" uk-grid>
-                        <div>
-                            <div class="uk-card uk-card-primary uk-card-body">
-                                <div class="uk-card-badge uk-label">Badge</div>
-                                <h3 class="uk-card-title">Title</h3>
-                                <p>Lorem ipsum color sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <h3 class="uk-text-center section-head">Nos valeurs</h3>
+                    <div class="uk-child-width-1-3@m" uk-grid uk-scrollspy="cls: uk-animation-slide-left; target: .uk-card; delay: 300; repeat: false">
+                        <div class="uk-box-shadow-hover-small">
+                            <div class="uk-card uk-card-default uk-card-body valeur-item">
+                                <div class="uk-flex uk-flex-column uk-width-1-1">
+                                    <div class="uk-card uk-card-default uk-card-body" style="box-shadow: 0 0 0;">
+                                        <img data-src="images/hand-sheking.jpg" class="uk-align-center" width="250" height="250" alt="" uk-img>
+                                    </div>
+                                    <div class="uk-card uk-card-default uk-card-body" style="box-shadow: 0 0 0;padding: 0;">
+                                        <div class="uk-text-bolder uk-text-center valeur-item-text">Confiance</div> 
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div>
-                            <div class="uk-card uk-card-primary uk-card-body">
-                                <div class="uk-card-badge uk-label">Badge</div>
-                                <h3 class="uk-card-title">Title</h3>
-                                <p>Lorem ipsum color sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <div class="uk-box-shadow-hover-small">
+                            <div class="uk-card uk-card-default uk-card-body valeur-item" uk-scrollspy-class="uk-animation-slide-bottom">
+                                <div class="uk-flex uk-flex-column uk-width-1-1">
+                                    <div class="uk-card uk-card-default uk-card-body" style="box-shadow: 0 0 0;">
+                                        <img data-src="images/car-mechanic-concept.jpg" class="uk-align-center" width="250" height="250" alt="" uk-img>
+                                    </div>
+                                    <div class="uk-card uk-card-default uk-card-body" style="box-shadow: 0 0 0;padding: 0;">
+                                        <div class="uk-text-bolder uk-text-center valeur-item-text">Professionnalisme</div> 
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div>
-                            <div class="uk-card uk-card-primary uk-card-body">
-                                <div class="uk-card-badge uk-label">Badge</div>
-                                <h3 class="uk-card-title">Title</h3>
-                                <p>Lorem ipsum color sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <div class="uk-box-shadow-hover-small">
+                            <div class="uk-card uk-card-default uk-card-body valeur-item" uk-scrollspy-class="uk-animation-slide-right">
+                                <div class="uk-flex uk-flex-column uk-width-1-1">
+                                    <div class="uk-card uk-card-default uk-card-body" style="box-shadow: 0 0 0;">
+                                        <img data-src="images/car-mechanic-concept.jpg" class="uk-align-center" width="250" height="250" alt="" uk-img>
+                                    </div>
+                                    <div class="uk-card uk-card-default uk-card-body" style="box-shadow: 0 0 0;padding: 0;">
+                                        <div class="uk-text-bolder uk-text-center valeur-item-text">Rigeur</div> 
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -171,28 +188,40 @@
             <!-- NOS OFFRES -->
             <div class="uk-section">
                 <div class="uk-container">
-                    <h1 class="uk-heading-small uk-text-center">Nos offres et services</h1>
+                    <h3 class="uk-text-center section-head">Nos offres et services</h3>
 
-                    <div class="uk-child-width-expand@s uk-text-center" uk-grid>
-                        <div>
-                            <div class="uk-card uk-card-primary uk-card-body">
-                                <div class="uk-card-badge uk-label">Badge</div>
-                                <h3 class="uk-card-title">Title</h3>
-                                <p>Lorem ipsum color sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="uk-child-width-1-3@m" uk-grid>
+                        <div class="">
+                            <div class="uk-inline">
+                                <img src="images/photo.jpg" alt="">
+                                <div class="uk-overlay uk-overlay-primary uk-position-bottom">
+                                    <p class="uk-position-center uk-h3">Formation</p>
+                                </div>
+                            </div>
+                            <div class="uk-alert-primary uk-text-center" style="margin-top: 0;" uk-alert>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                             </div>
                         </div>
-                        <div>
-                            <div class="uk-card uk-card-primary uk-card-body">
-                                <div class="uk-card-badge uk-label">Badge</div>
-                                <h3 class="uk-card-title">Title</h3>
-                                <p>Lorem ipsum color sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <div class="">
+                            <div class="uk-inline">
+                                <img src="images/photo.jpg" alt="">
+                                <div class="uk-overlay uk-overlay-primary uk-position-bottom">
+                                    <p class="uk-position-center uk-h3">Conseils en investissement</p>
+                                </div>
+                            </div>
+                            <div class="uk-alert-primary uk-text-center" style="margin-top: 0;" uk-alert>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                             </div>
                         </div>
-                        <div>
-                            <div class="uk-card uk-card-primary uk-card-body">
-                                <div class="uk-card-badge uk-label">Badge</div>
-                                <h3 class="uk-card-title">Title</h3>
-                                <p>Lorem ipsum color sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <div class="">
+                            <div class="uk-inline">
+                                <img src="images/photo.jpg" alt="">
+                                <div class="uk-overlay uk-overlay-primary uk-position-bottom">
+                                    <p class="uk-position-center uk-h3">Gestion de portefeuille</p>
+                                </div>
+                            </div>
+                            <div class="uk-alert-primary uk-text-center" style="margin-top: 0;" uk-alert>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                             </div>
                         </div>
                     </div>
@@ -203,69 +232,27 @@
 
             <!-- NOS PARTENAIRES -->
             <div class="uk-section">
-                <h1 class="uk-heading-small uk-text-center">Nos Partenaires</h1>
+                <h3 class="uk-text-center section-head">Les entreprises qui nous font confiance</h3>
                 <div class="uk-container">
-                    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider style="CURSOR: grab;">
+                    <div id="partenaires-slider" class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider style="CURSOR: grab;">
 
-                        <ul class="uk-slider-items uk-child-width-1-4 uk-child-width-1-5@x uk-grid">
+                        <ul class="uk-slider-items uk-flex-center uk-child-width-1-6 uk-child-width-1-5@x uk-grid">
                             <li class="uk-height-small">
                                 <div class="uk-panel uk-height-small">
                                     <img src="images/slider1.jpg" alt="">
-                                    <div class="uk-position-center uk-panel"><h1>1</h1></div>
+                                    <!-- <div class="uk-position-center uk-panel"><h1>1</h1></div> -->
                                 </div>
                             </li>
                             <li class="uk-height-small">
                                 <div class="uk-panel uk-height-small">
                                     <img src="images/slider2.jpg" alt="">
-                                    <div class="uk-position-center uk-panel"><h1>2</h1></div>
+                                    <!-- <div class="uk-position-center uk-panel"><h1>2</h1></div> -->
                                 </div>
                             </li>
                             <li class="uk-height-small">
                                 <div class="uk-panel uk-height-small">
                                     <img src="images/slider3.jpg" alt="">
-                                    <div class="uk-position-center uk-panel"><h1>3</h1></div>
-                                </div>
-                            </li>
-                            <li class="uk-height-small">
-                                <div class="uk-panel uk-height-small">
-                                    <img src="images/slider4.jpg" alt="">
-                                    <div class="uk-position-center uk-panel"><h1>4</h1></div>
-                                </div>
-                            </li>
-                            <li class="uk-height-small">
-                                <div class="uk-panel uk-height-small">
-                                    <img src="images/slider5.jpg" alt="">
-                                    <div class="uk-position-center uk-panel"><h1>5</h1></div>
-                                </div>
-                            </li>
-                            <li class="uk-height-small">
-                                <div class="uk-panel uk-height-small">
-                                    <img src="images/slider1.jpg" alt="">
-                                    <div class="uk-position-center uk-panel"><h1>6</h1></div>
-                                </div>
-                            </li>
-                            <li class="uk-height-small">
-                                <div class="uk-panel uk-height-small">
-                                    <img src="images/slider2.jpg" alt="">
-                                    <div class="uk-position-center uk-panel"><h1>7</h1></div>
-                                </div>
-                            </li>
-                            <li class="uk-height-small">
-                                <div class="uk-panel uk-height-small">
-                                    <img src="images/slider3.jpg" alt="">
-                                    <div class="uk-position-center uk-panel"><h1>8</h1></div>
-                                </div>
-                            </li>
-                            <li class="uk-height-small">
-                                <div class="uk-panel uk-height-small">
-                                    <img src="images/slider4.jpg" alt="">
-                                    <div class="uk-position-center uk-panel"><h1>9</h1></div>
-                                </div>
-                            </li>
-                            <li class="uk-height-small">
-                                <div class="uk-panel uk-height-small">
-                                    <img src="images/slider5.jpg" alt="">
-                                    <div class="uk-position-center uk-panel"><h1>10</h1></div>
+                                    <!-- <div class="uk-position-center uk-panel"><h1>3</h1></div> -->
                                 </div>
                             </li>
                         </ul>
@@ -281,7 +268,7 @@
 
             <!-- AVIS -->
             <div class="uk-section">
-                <h1 class="uk-heading-small uk-text-center">Les avis</h1>
+                <h3 class="uk-text-center section-head">Nos clients témoignent</h3>
                 <div class="uk-container">
                     <div uk-slider="center: true">
 
@@ -319,28 +306,6 @@
                                     <div class="uk-card uk-card-default">
                                         <!-- <div class="uk-card-media-top">
                                             <img src="images/light.jpg" alt="">
-                                        </div> -->
-                                        <div class="uk-card-body">
-                                            <h3 class="uk-card-title">Headline</h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="uk-card uk-card-default">
-                                        <!-- <div class="uk-card-media-top">
-                                            <img src="images/photo2.jpg" alt="">
-                                        </div> -->
-                                        <div class="uk-card-body">
-                                            <h3 class="uk-card-title">Headline</h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="uk-card uk-card-default">
-                                        <!-- <div class="uk-card-media-top">
-                                            <img src="images/photo3.jpg" alt="">
                                         </div> -->
                                         <div class="uk-card-body">
                                             <h3 class="uk-card-title">Headline</h3>
