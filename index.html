@@ -1,38 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" class="notranslate" translate="no">
     <head>
         <title>newtouch</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="google" content="notranslate" />
+        <meta property="og:title" content="New Touch Investing">
+        <meta property="og:description" content="Entreprise de conseil, d'assistance et coaching en investissement et vous offre également des packs d'investissement avec des RSI intéressant">
+        <meta property="og:image" content="https://siteweb.newtouchinvesting.com/images/logo/societes/IMG-20200705-WA0003.jpg">
+        <meta property="og:url" content="https://siteweb.newtouchinvesting.com/index.html">
+        
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.0/dist/css/uikit.min.css" />
         <link rel="stylesheet" href="style.css" />
 
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=MuseoModerno"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fondamento"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster Two"/>
+
         <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.0/dist/js/uikit.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.0/dist/js/uikit-icons.min.js"></script>
+        <script src="https://kit.fontawesome.com/3930cdd8e9.js" crossorigin="anonymous"></script>
+        <script src="index.js"></script>
     </head>
     <body>
-
         <!-- OFF-CANVAS -->
-        <div id="offcanvas-overlay" uk-offcanvas="overlay: true; flip: true">
-            <div class="uk-offcanvas-bar" style="background: white; color: black;">
+        <div id="offcanvas-overlay" uk-offcanvas="mode: slide; overlay: true;">
+            <div class="uk-offcanvas-bar uk-light">
 
-                <button class="uk-offcanvas-close" type="button" uk-close></button>
-
-                <ul class="uk-nav uk-nav-default">
-                    <li class="uk-active"><a href="#">Active</a></li>
-                    <li class="uk-parent">
-                        <a href="#">Parent</a>
-                        <ul class="uk-nav-sub">
-                            <li><a href="#">Sub item</a></li>
-                            <li><a href="#">Sub item</a></li>
-                        </ul>
-                    </li>
-                    <li class="uk-nav-header">Header</li>
-                    <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: table"></span> Item</a></li>
-                    <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span> Item</a></li>
-                    <li class="uk-nav-divider"></li>
-                    <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: trash"></span> Item</a></li>
-                </ul>
+                <div class="uk-panel">
+                    <ul class="uk-nav uk-nav-default tm-nav">
+                        <li class="uk-nav-header">General</li>
+                        <!-- <li class="router-link-exact-active uk-active"><a href="#">Home</a></li>  -->
+                        <li class="uk-text-uppercase"><a href="#about-clone">A PROPOS</a></li> 
+                        <li class="uk-text-uppercase"><a href="#valeurs__">NOS VALEURS</a></li> 
+                        <li class="uk-text-uppercase"><a href="#offres_services__">OFFRES &amp; SERVICES</a></li>
+                        <li class="uk-text-uppercase"><a href="#partenaires__">PARTENAIRES</a></li>
+                        <li class="uk-text-uppercase"><a href="#avis-clone">TéMOIGNAGEs</a></li>
+                    </ul>
+                </div>
 
             </div>
         </div>
@@ -40,141 +46,186 @@
         <div class="uk-position-relative">
             
             <!-- SLIDESHOW -->
-            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="ratio: 7:3; animation: scale">
+            <div id="slideshow" class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="ratio: false; animation: pull">
 
-                <ul class="uk-slideshow-items">
+                <ul class="uk-slideshow-items" uk-height-viewport="offset-top: true; offset-bottom: 10">
                     <li>
-                        <img src="images/photo.jpg" alt="" uk-cover>
+                        <img src="images/building.jpeg" alt="" uk-cover>
+                        <div class="uk-card uk-card-default uk-position-center-left uk-margin-large-left uk-width-1-3@m uk-width-1-1@xs" style="box-shadow: 0 5px 15px #402ed4ab; padding: 20px; background: linear-gradient(to right, #edeaea, #97b3b0f0);" >
+                            <h3 class="uk-card-title" style="color: #d4a500;text-shadow: 2px 2px gray;">
+                                Chez NTI vous êtes tous particuliers.
+                            </h3>
+                            <p style="font-family: 'Fondamento'; font-size: 20px; color: black;">
+                                Nous avons une solution taillée sur mesure pour chacun de vous.
+                            </p>
+                        </div>
                     </li>
                     <li>
-                        <img src="images/dark.jpg" alt="" uk-cover>
+                        <img src="images/WhatsApp Image 2020-07-16 at 15.34.36.jpeg" alt="" uk-cover>
+                        <div class="uk-card uk-card-default uk-card-body uk-position-center-left uk-margin-large-left uk-width-1-3@m uk-width-1-1@xs" style="box-shadow: 0 5px 15px #402ed4ab; background: linear-gradient(to right, #edeaea, #97b3b0f0);">
+                            <h3 class="uk-card-title" style="color: #d4a500;text-shadow: 2px 2px gray;">
+                                Votre satisfaction avant la nôtre.
+                            </h3>
+                            <p style="font-family: 'Fondamento'; font-size: 20px; color: black;">
+                                L'assurance de notre enrichissement passe par l'enrichissement de nos clients (votre enrichissement), joignez vous donc à nous et enrichissons nous ensemble.
+                            </p>
+                        </div>
                     </li>
                     <li>
-                        <img src="images/light.jpg" alt="" uk-cover>
+                        <img src="images/hand-male-holding-light-bulb-copy-space-accounting_43284-1669.jpg" alt="" uk-cover>
+                        <div class="uk-card uk-card-default uk-card-body uk-position-center-left uk-margin-large-left uk-width-1-3@m uk-width-1-1@xs" style="box-shadow: 0 5px 15px; background: linear-gradient(to right, #edeaea, #97b3b0f0);">
+                            <h3 class="uk-card-title" style="color: #d4a500;text-shadow: 2px 2px gray;">
+                                Une nouvelle façon d'investir.
+                            </h3>
+                            <p style="font-family: 'Fondamento'; font-size: 20px; color: black;">
+                                Commence où tu es, utilises ce que tu as, fais ce que tu peux et avance avec nous.
+                            </p>
+                        </div>
                     </li>
                 </ul>
 
-                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
-                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
-            </div>
+                <a class="uk-position-center-left uk-position-small uk-hidden-hover uk-icon-button slidenav" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                <a class="uk-position-center-right uk-position-small uk-hidden-hover uk-icon-button slidenav" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
 
-            
+                <div class="bradcumbContent">
+                    <h2 class="uk-position-center">A PROPOS DE NOUS</h2>
+                </div>
+            </div>
+            <div class="bg-gradient"></div>
 
             <!-- NAVBAR -->
             <div class="uk-position-top">
                 <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
-                    <nav class="uk-navbar  uk-margin uk-background-secondary uk-light" uk-navbar="mode: hover" style="position: relative; z-index: 980; background: #223d74;">
+                    <nav id="navbar" class="uk-navbar uk-margin uk-background-secondary uk-light" uk-navbar="mode: hover" style="position: relative; z-index: 980; background: rgba(0, 0, 0, 0.48);">
                         
                         <a href="" class="uk-navbar-item uk-logo">
-                            <img data-src="images/brand.png" width="110" height="50" alt="" uk-img>
-                            <!-- <img data-src="images/logo-avec-fond-min.jpg" width="110" alt="" uk-img> -->
+                            <img data-src="images/logo/Webp.net-resizeimage.png" style="height: 100px" uk-img>
+                            
+                            <div id="logo-words" translate="no" class="uk-flex uk-flex-column uk-width-1-2" style="font-weight: bold;">
+                                <div class="uk-card">
+                                    <span style="color: #d4a500;">NEW</span> <span style="color: #356db9;">TOUCH</span>
+                                </div>
+                                <span class="uk-card uk-align-center uk-text-center" style="color: white; font-size: 13px;">INVESTING</span>
+                            </div>
                         </a>
 
                         <div class="uk-navbar-right">
 
-                            <ul class="uk-navbar-nav">
-                                <li class="uk-active">
-                                    <a href="#">Active</a>
+                            <ul class="uk-navbar-nav uk-visible@m">
+                                <li id="navbar-item-about" class="navbar-item uk-active">
+                                    <a uk-scroll href="#about" class="uk-text-uppercase">A PROPOS</a>
+                                    <hr class="uk-divider-small navbar-item-divider nav-item-divider" style="display: none;">
                                 </li>
-                                <li>
-                                    <a href="#" aria-expanded="false">Parent</a>
-                                    <div class="uk-navbar-dropdown uk-navbar-dropdown-bottom-right">
-                                        <ul class="uk-nav uk-navbar-dropdown-nav">
-                                            <li class="uk-active"><a href="#">Active</a></li>
-                                            <li><a href="#">Item</a></li>
-                                            <li><a href="#">Item</a></li>
-                                        </ul>
-                                    </div>
+                                <li id="navbar-item-valeurs" class="navbar-item">
+                                    <a uk-scroll href="#valeurs__" class="uk-text-uppercase">NOS VALEURS</a>
+                                    <hr class="uk-divider-small navbar-item-divider nav-item-divider" style="display: none;">
                                 </li>
-                                <li>
+                                <li id="navbar-item-offres_services__" class="navbar-item">
+                                    <a uk-scroll href="#offres_services__" class="uk-text-uppercase">OFFRES &amp; SERVICES</a>
+                                    <hr class="uk-divider-small navbar-item-divider nav-item-divider" style="display: none;">
+                                </li>
+                                <li id="navbar-item-partenaires" class="navbar-item">
+                                    <a uk-scroll href="#partenaires__" class="uk-text-uppercase">PARTENAIRES</a>
+                                    <hr class="uk-divider-small navbar-item-divider nav-item-divider" style="display: none;">
+                                </li>
+                                <li id="navbar-item-avis" class="navbar-item">
+                                    <a uk-scroll href="#avis-clone" class="uk-text-uppercase">TéMOIGNAGES</a>
+                                    <hr class="uk-divider-small navbar-item-divider nav-item-divider" style="display: none;">
+                                </li>
+
+                                <!-- <li>
                                     <a class="uk-navbar-toggle" href="#" uk-toggle="target: #offcanvas-overlay">
-                                        <span uk-navbar-toggle-icon></span>
+                                        <span id="id-contact-us" uk-icon="icon: mail; ratio: 2.5"></span>
                                     </a>
-                                </li>
+                                </li> -->
                             </ul>
+                            
+                            <a class="uk-navbar-toggle uk-hidden@m" uk-navbar-toggle-icon href="#" uk-toggle="target: #offcanvas-overlay" style="color: #505255;"></a>
 
                         </div>
                     </nav>
                 </div>
             </div>
         </div>
-
-
-        <hr class="uk-divider-icon">
-
         
-        <div class="uk-container">
+        <div class="uk-container" id="main-content">
             <!-- A PROPOS -->
-            <div class="uk-section">
+            <div id="about" class="uk-section">
                 <div class="uk-container">
-                    <div class="uk-grid-match uk-child-width-expand@s uk-text-center" uk-grid>
+
+                    <div class="uk-panel" style="color: black;">
+                        <img class="uk-align-left uk-margin-remove-adjacent uk-border-rounded uk-width-1-2@m" src="images/salle_de_reunion.jpeg" alt="image" >
+                        <p style="font-weight: normal;text-align: justify;">
+                            <strong style="font-size: 20px;">NEW TOUCH INVESTING(NTI)</strong> est une entreprise de conseil, 
+                            coaching et formation en investissement boursier, 
+                            gestion de capitaux et financement de projets.<br/>
+                            Nous mettons à votre disposition des experts conseillers pour vos indécisions face à certains investissements. 
+                            Désormais laissez-nous étudier l’investissement pour vous et assurer la rentabilisation de celui-ci.
+                        </p>
+                        <p style="font-weight: normal;text-align: justify;">
+                            Votre évolution en trading est difficile ? 
+                            Rejoignez un vaste et puissant réseau de traders experts basés au Togo, au Benin, au Maroc, en France et à Dubaï. 
+                            Faites-vous former par les professionnels, devenez expert et soyons tous lucratifs.
+                        </p>
+                        <p style="font-weight: normal;text-align: justify;">
+                            Vous pouvez également confiez la gestion de votre capital à NTI pour être investi en bourse 
+                            par nos experts trader en vue de vous octroyer un retour sur investissement assuré.
+                        </p>
                         <div>
-                            <div class="uk-card uk-card-default uk-card-body">
-                                <img class="uk-align-left uk-margin-remove-adjacent" src="images/light.jpg"  alt="Example image">
-                            </div>
-                         </div>
-                        <div>
-                            <div class="uk-card uk-card-default uk-card-body uk-text-justify">
-                                <p class="uk-dropcap">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                                    nisi ut aliquip ex ea commodo consequat.
-                                </p>
-                                <p>
-                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
-                                    magna aliqua.
-                                </p>
-                                <div>
-                                    <button class="uk-button uk-button-danger uk-align-center">More <span uk-icon="icon: plus"></span></button>
-                                </div>
-                            </div>
+                            <a uk-scroll href="#offres_services">
+                                <button class="uk-button uk-align-center circle-btn default-btn">
+                                    <span uk-icon="icon: plus"></span> nos services
+                                </button>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
-
-
 
             <!-- NOS VALEURS -->
-            <div class="uk-section">
+            <div id="valeurs__" style="height: 150px"></div>
+            <div class="bg-gradient">
+                <div class="section-head">
+                    <h2 class="uk-position-center">NOS valeurs</h2>
+                </div>
+            </div>
+            <div id="valeurs" class="uk-section">
                 <div class="uk-container">
-                    <h3 class="uk-text-center section-head">Nos valeurs</h3>
-                    <div class="uk-child-width-1-3@m" uk-grid uk-scrollspy="cls: uk-animation-slide-left; target: .uk-card; delay: 300; repeat: false">
-                        <div class="uk-box-shadow-hover-small">
-                            <div class="uk-card uk-card-default uk-card-body valeur-item">
-                                <div class="uk-flex uk-flex-column uk-width-1-1">
-                                    <div class="uk-card uk-card-default uk-card-body" style="box-shadow: 0 0 0;">
-                                        <img data-src="images/hand-sheking.jpg" class="uk-align-center" width="250" height="250" alt="" uk-img>
-                                    </div>
-                                    <div class="uk-card uk-card-default uk-card-body" style="box-shadow: 0 0 0;padding: 0;">
-                                        <div class="uk-text-bolder uk-text-center valeur-item-text">Confiance</div> 
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="uk-box-shadow-hover-small">
-                            <div class="uk-card uk-card-default uk-card-body valeur-item" uk-scrollspy-class="uk-animation-slide-bottom">
-                                <div class="uk-flex uk-flex-column uk-width-1-1">
-                                    <div class="uk-card uk-card-default uk-card-body" style="box-shadow: 0 0 0;">
-                                        <img data-src="images/car-mechanic-concept.jpg" class="uk-align-center" width="250" height="250" alt="" uk-img>
-                                    </div>
-                                    <div class="uk-card uk-card-default uk-card-body" style="box-shadow: 0 0 0;padding: 0;">
-                                        <div class="uk-text-bolder uk-text-center valeur-item-text">Professionnalisme</div> 
+                    <div style="width: 80%; margin: auto;">
+                        <div class="uk-child-width-1-3@m" uk-grid uk-scrollspy="cls: uk-animation-slide-left; target: .uk-card; delay: 300; repeat: false">
+                            <div class="uk-box-shadow-hover-small">
+                                <div class="uk-card uk-card-default uk-card-body valeur-item" style="padding: 0;">
+                                    <div class="uk-flex uk-flex-column uk-width-1-1">
+                                        <div class="uk-card uk-card-default uk-card-body valeur-item-image">
+                                            <img data-src="https://img.icons8.com/nolan/96/helping-hand.png" class="uk-align-center nos-valeurs-items-image"  alt="" uk-img>
+                                        </div>
+                                        <div class="uk-card uk-card-default uk-card-body" style="box-shadow: 0 0 0;padding: 0;">
+                                            <div class="uk-text-bolder uk-text-center valeur-item-text">Confiance</div> 
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="uk-box-shadow-hover-small">
-                            <div class="uk-card uk-card-default uk-card-body valeur-item" uk-scrollspy-class="uk-animation-slide-right">
-                                <div class="uk-flex uk-flex-column uk-width-1-1">
-                                    <div class="uk-card uk-card-default uk-card-body" style="box-shadow: 0 0 0;">
-                                        <img data-src="images/car-mechanic-concept.jpg" class="uk-align-center" width="250" height="250" alt="" uk-img>
+                            <div class="uk-box-shadow-hover-small">
+                                <div class="uk-card uk-card-default uk-card-body valeur-item" style="padding: 0;" uk-scrollspy-class="uk-animation-slide-bottom">
+                                    <div class="uk-flex uk-flex-column uk-width-1-1">
+                                        <div class="uk-card uk-card-default uk-card-body valeur-item-image">
+                                            <img data-src="https://img.icons8.com/nolan/96/medal2.png" class="uk-align-center nos-valeurs-items-image" alt="" uk-img>
+                                        </div>
+                                        <div class="uk-card uk-card-default uk-card-body" style="box-shadow: 0 0 0;padding: 0;">
+                                            <div class="uk-text-bolder uk-text-center valeur-item-text">Professionnalisme</div> 
+                                        </div>
                                     </div>
-                                    <div class="uk-card uk-card-default uk-card-body" style="box-shadow: 0 0 0;padding: 0;">
-                                        <div class="uk-text-bolder uk-text-center valeur-item-text">Rigeur</div> 
+                                </div>
+                            </div>
+                            <div class="uk-box-shadow-hover-small">
+                                <div class="uk-card uk-card-default uk-card-body valeur-item" style="padding: 0;" uk-scrollspy-class="uk-animation-slide-right">
+                                    <div class="uk-flex uk-flex-column uk-width-1-1">
+                                        <div class="uk-card uk-card-default uk-card-body valeur-item-image">
+                                            <img data-src="https://img.icons8.com/nolan/96/mission-of-a-company.png" class="uk-align-center nos-valeurs-items-image" alt="" uk-img>
+                                        </div>
+                                        <div class="uk-card uk-card-default uk-card-body" style="box-shadow: 0 0 0;padding: 0;">
+                                            <div class="uk-text-bolder uk-text-center valeur-item-text">Rigeur</div> 
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -182,46 +233,94 @@
                     </div>
                 </div>
             </div>
-
 
 
             <!-- NOS OFFRES -->
-            <div class="uk-section">
-                <div class="uk-container">
-                    <h3 class="uk-text-center section-head">Nos offres et services</h3>
+            <div id="offres_services__" style="height: 150px"></div>
+            <div class="bg-gradient">
+                <div class="section-head">
+                    <h2 class="uk-position-center">NOS OFFRES et services</h2>
+                </div>
+            </div>
+            <div id="offres_services" class="uk-section">
+                <div class="uk-container" style="width: 90%; margin: auto;">
+                    <div class="uk-child-width-1-2@m uk-child-width-1-4@x uk-margin-bottom" uk-grid>
 
-                    <div class="uk-child-width-1-3@m" uk-grid>
-                        <div class="">
-                            <div class="uk-inline">
-                                <img src="images/photo.jpg" alt="">
-                                <div class="uk-overlay uk-overlay-primary uk-position-bottom">
-                                    <p class="uk-position-center uk-h3">Formation</p>
+                        <div class="uk-text-center uk-margin-large-bottom">
+                            <div class="uk-inline-clip uk-transition-toggle offres_services_item" tabindex="0">
+                                <img src="images/two-happy-men-working-together-new-business-project_171337-7319.jpg" alt="" style="transition: transform 1s;">
+                                <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
+                                    <p class="uk-margin-remove">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+                                    </p>
+                                    <a>
+                                        <button class="uk-button uk-align-center circle-btn default-btn offres_services_btn">
+                                            <span uk-icon="icon: plus"></span> En savoir plus
+                                        </button>
+                                    </a>
                                 </div>
                             </div>
-                            <div class="uk-alert-primary uk-text-center" style="margin-top: 0;" uk-alert>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                            <div class="uk-margin-small-top uk-h4 offres_services_item_title">
+                                <div class="section-head">
+                                    <p class="uk-position-center">Conseils &amp; Assistances</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="">
-                            <div class="uk-inline">
-                                <img src="images/photo.jpg" alt="">
-                                <div class="uk-overlay uk-overlay-primary uk-position-bottom">
-                                    <p class="uk-position-center uk-h3">Conseils en investissement</p>
+
+                        <div class="uk-text-center">
+                            <div class="uk-inline-clip uk-transition-toggle offres_services_item" tabindex="0">
+                                <img src="images/Webp.net-resizeimage.jpg" alt="" style="transition: transform 1s;">
+                                <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
+                                    <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                    <a>
+                                        <button class="uk-button uk-align-center circle-btn default-btn offres_services_btn">
+                                            <span uk-icon="icon: plus"></span> En savoir plus
+                                        </button>
+                                    </a>
                                 </div>
                             </div>
-                            <div class="uk-alert-primary uk-text-center" style="margin-top: 0;" uk-alert>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                            <div class="uk-margin-small-top uk-h4 offres_services_item_title">
+                                <div class="section-head">
+                                    <p class="uk-position-center">Coaching &amp; Formation</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="">
-                            <div class="uk-inline">
-                                <img src="images/photo.jpg" alt="">
-                                <div class="uk-overlay uk-overlay-primary uk-position-bottom">
-                                    <p class="uk-position-center uk-h3">Gestion de portefeuille</p>
+
+                        <div class="uk-text-center">
+                            <div class="uk-inline-clip uk-transition-toggle offres_services_item" tabindex="0">
+                                <img src="images/business-man-accounting-calculating-cost-economic-budget-investment-saving_18497-1063.jpg" alt="" style="transition: transform 1s;">
+                                <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
+                                    <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                    <a>
+                                        <button class="uk-button uk-align-center circle-btn default-btn offres_services_btn">
+                                            <span uk-icon="icon: plus"></span> En savoir plus
+                                        </button>
+                                    </a>
                                 </div>
                             </div>
-                            <div class="uk-alert-primary uk-text-center" style="margin-top: 0;" uk-alert>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                            <div class="uk-margin-small-top uk-h4 offres_services_item_title">
+                                <div class="section-head">
+                                    <p class="uk-position-center">Gestion de capitaux</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="uk-text-center">
+                            <div class="uk-inline-clip uk-transition-toggle offres_services_item" tabindex="0">
+                                <img src="images/top-view-businessman-signing-documents_1098-3387.jpg" alt="" style="transition: transform 1s;">
+                                <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
+                                    <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                    <a>
+                                        <button class="uk-button uk-align-center circle-btn default-btn offres_services_btn">
+                                            <span uk-icon="icon: plus"></span> En savoir plus
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="uk-margin-small-top uk-h4 offres_services_item_title">
+                                <div class="section-head">
+                                    <p class="uk-position-center">Financement de projets</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -231,35 +330,58 @@
 
 
             <!-- NOS PARTENAIRES -->
-            <div class="uk-section">
-                <h3 class="uk-text-center section-head">Les entreprises qui nous font confiance</h3>
-                <div class="uk-container">
-                    <div id="partenaires-slider" class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider style="CURSOR: grab;">
+            <div id="partenaires__" style="height: 150px"></div>
+            <div class="bg-gradient">
+                <div class="section-head">
+                    <h2 class="uk-position-center">sociétés & partenaires</h2>
+                </div>
+            </div>
+            <div id="partenaires" class="uk-section">
+                <div class="uk-container uk-margin-top">
+                    <div id="partenaires-slider" class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+                        <ul class="uk-slider-items uk-flex-center uk-child-width-1-4@m uk-grid" style="cursor: grab;">
+                            <li class="uk-height-small">
+                                <div class="uk-panel uk-height-small">
+                                    <a>
+                                        <img class="uk-border-rounded" data-src="images/logo/societes/IMG-20200705-WA0003.jpg" uk-img uk-tooltip="New Touch Transport">
+                                    </a>
+                                </div>
+                            </li>
 
-                        <ul class="uk-slider-items uk-flex-center uk-child-width-1-6 uk-child-width-1-5@x uk-grid">
                             <li class="uk-height-small">
                                 <div class="uk-panel uk-height-small">
-                                    <img src="images/slider1.jpg" alt="">
-                                    <!-- <div class="uk-position-center uk-panel"><h1>1</h1></div> -->
+                                    <a>
+                                        <img class="uk-border-rounded" data-src="images/logo/societes/IMG-20200705-WA0002.jpg" uk-img uk-tooltip="New Touch Technology">
+                                    </a>
                                 </div>
                             </li>
+
                             <li class="uk-height-small">
                                 <div class="uk-panel uk-height-small">
-                                    <img src="images/slider2.jpg" alt="">
-                                    <!-- <div class="uk-position-center uk-panel"><h1>2</h1></div> -->
+                                    <a href="https://www.financeonlinetg.com/apropos">
+                                        <img class="uk-border-rounded" data-src="images/logo/societes/IMG-20200630-WA0015.jpg" uk-img uk-tooltip="Microfinance">
+                                    </a>
                                 </div>
                             </li>
+
                             <li class="uk-height-small">
                                 <div class="uk-panel uk-height-small">
-                                    <img src="images/slider3.jpg" alt="">
-                                    <!-- <div class="uk-position-center uk-panel"><h1>3</h1></div> -->
+                                    <a>
+                                        <img class="uk-border-rounded" data-src="images/logo/societes/IMG-20200702-WA0007.jpg" uk-img uk-tooltip="SC Internation Trading">
+                                    </a>
+                                </div>
+                            </li>
+
+                            <li class="uk-height-small">
+                                <div class="uk-panel uk-height-small">
+                                    <a href="https://www.instagram.com/africa.investing/">
+                                        <img class="uk-border-rounded" data-src="images/logo/societes/africa_investing.jpeg" uk-img uk-tooltip="Africa Investing">
+                                    </a>
                                 </div>
                             </li>
                         </ul>
-
-                        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-                        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
-
+                        
+                        <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin uk-margin-large-top"></ul>
                     </div>
                 </div>
             </div>
@@ -267,57 +389,71 @@
 
 
             <!-- AVIS -->
-            <div class="uk-section">
-                <h3 class="uk-text-center section-head">Nos clients témoignent</h3>
+            <div id="avis-clone" style="height: 150px"></div>
+            <div class="bg-gradient">
+                <div class="section-head">
+                    <h2 class="uk-position-center">NOS clients témoignent</h2>
+                </div>
+            </div>
+            <div id="avis" class="uk-section">
                 <div class="uk-container">
-                    <div uk-slider="center: true">
+                    <div id="avis-slider" uk-slider="center: true">
 
                         <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
 
                             <ul class="uk-slider-items uk-child-width-1-2@s uk-grid">
                                 <li>
+                                    <blockquote class="blockquote blockquote-custom bg-white p-5 shadow rounded" style="margin-top: 30px;">
+                                        <div class="blockquote-custom-icon bg-info shadow-sm"><i class="fa fa-quote-left text-white"></i></div>
+                                        <p class="mb-0 mt-2 font-italic" style="color: #333;">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo <a href="#" style="color: #e69b13;" class="text-info">@consequat</a>."</p>
+                                        <footer class="blockquote-footer pt-4 mt-4 border-top" style="color: #333;">Someone famous in
+                                            <cite title="Source Title">Source Title</cite>
+                                        </footer>
+                                    </blockquote>
+                                </li>
+                                <!-- <li>
                                     <div class="uk-card uk-card-default">
-                                        <!-- <div class="uk-card-media-top">
-                                            <img src="images/photo.jpg" alt="">
-                                        </div> -->
                                         <div class="uk-card-body">
                                             <h3 class="uk-card-title">
-                                                <span uk-icon="icon: user; ratio: 2"></span>
+                                                <img class="uk-border-circle" src="images/avatar.jpg" width="100" height="100" alt="Border circle">
+                                                <span class="avis-avatar-name">M. James Bound</span>
                                             </h3>
                                             <p>
-                                                <span uk-icon="icon: quote-right; ratio: 2"></span> 
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+                                                <span uk-icon="icon: quote-right; ratio: 2" style="color: #d4a500;"></span> 
+                                                <blockquote style="color: #333 !important; font-size:25px; font-family: 'Lobster';">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</blockquote>
                                             </p>
                                         </div>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="uk-card uk-card-default">
-                                        <!-- <div class="uk-card-media-top">
-                                            <img src="images/dark.jpg" alt="">
-                                        </div> -->
                                         <div class="uk-card-body">
-                                            <h3 class="uk-card-title">Headline</h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                            <h3 class="uk-card-title">
+                                                <img class="uk-border-circle" src="images/avatar.jpg" width="100" height="100" alt="Border circle">
+                                                <span class="avis-avatar-name">M. James Bound</span>
+                                            </h3>
+                                            <p>
+                                                <span uk-icon="icon: quote-right; ratio: 2" style="color: #d4a500;"></span> 
+                                                <blockquote style="color: #333 !important; font-size:25px; font-family: 'Lobster';">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</blockquote>
+                                            </p>
                                         </div>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="uk-card uk-card-default">
-                                        <!-- <div class="uk-card-media-top">
-                                            <img src="images/light.jpg" alt="">
-                                        </div> -->
                                         <div class="uk-card-body">
-                                            <h3 class="uk-card-title">Headline</h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                            <h3 class="uk-card-title">
+                                                <img class="uk-border-circle" src="images/avatar.jpg" width="100" height="100" alt="Border circle">
+                                                <span class="avis-avatar-name">M. James Bound</span>
+                                            </h3>
+                                            <p>
+                                                <span uk-icon="icon: quote-right; ratio: 2" style="color: #d4a500;"></span> 
+                                                <blockquote style="color: #333 !important; font-size:25px; font-family: 'Lobster';">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</blockquote>
+                                            </p>
                                         </div>
                                     </div>
-                                </li>
+                                </li> -->
                             </ul>
-
-                            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-                            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
-
                         </div>
 
                         <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
@@ -328,24 +464,119 @@
 
 
         <footer>
-            <div class="uk-flex uk-flex-center">
+            <div class="uk-flex uk-flex-center" style="padding-top : 10px;padding-bottom: 10px;background-color: #6451cf">
+                <!-- <div class="social-network-item">
+                    <a href="" class="uk-icon-button uk-margin-small-right" uk-icon="twitter" style="color: #1da1f2;"></a>
+                </div> -->
                 <div class="social-network-item">
-                    <a href="" class="uk-icon-button uk-margin-small-right" uk-icon="twitter"></a>
+                    <a href="https://www.facebook.com/supportnewtouch/" class="uk-icon-button uk-margin-small-right" uk-icon="facebook" style="color: #0674e8;"></a>
                 </div>
                 <div class="social-network-item">
-                    <a href="" class="uk-icon-button uk-margin-small-right" uk-icon="facebook"></a>
+                    <a href="https://api.whatsapp.com/send?phone=0022893830561" class="uk-icon-button uk-margin-small-right" uk-icon="whatsapp" style="color: #0dc144;"></a>
                 </div>
                 <div class="social-network-item">
-                    <a href="" class="uk-icon-button uk-margin-small-right" uk-icon="github"></a>
-                </div>
-                <div class="social-network-item">
-                    <a href="" class="uk-icon-button uk-margin-small-right" uk-icon="instagram"></a>
+                    <a href="https://www.instagram.com/newtouchinvesting/" class="uk-icon-button uk-margin-small-right" uk-icon="instagram" style="color: white; background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);"></a>
                 </div>
             </div>
-            <div class="cr">
-                cc
+            
+            <div>
+                <div uk-grid style="background-color: #1d2331;padding-top: 0; padding-bottom: 0;">
+                    
+                    <div class="uk-card uk-width-1-3@l uk-width-1-2@s uk-card-default uk-card-body" style="background-color: transparent; color: white;box-shadow: 0 0 0;">
+                        <div class="uk-text-uppercase uk-text-bold" style="margin-left: 20px;">Contacts</div>
+                        <div class="uk-hr" style="margin-top: 4px;"></div>
+                        <div style="margin-top: 10px;margin-bottom: 25px;margin-left: 20px;">
+                            <span uk-icon="location" style="color: #d4a500"></span>
+                            <span style="margin-left: 20px; display: inline-block;">
+                                <a style="color: white" href="https://www.google.com/maps/place/6%C2%B012'26.2%22N+1%C2%B012'29.0%22E/@6.207271,1.2058663,17z/data=!3m1!4b1!4m17!1m10!4m9!1m4!2m2!1d1.20253!2d6.2043992!4e1!1m3!2m2!1d1.22959!2d6.1397!3m5!1s0x0:0x0!7e2!8m2!3d6.2072715!4d1.2080551">Agoè-Cacavéli</a>
+                            </span>
+                        </div>
+                        <div style="margin-bottom: 25px; margin-left: 20px;">
+                            <span uk-icon="mail" style="color: #d4a500"></span>
+                            <span style="margin-left: 20px; display: inline-block;">
+                                <a style="color: white" href="mailto:info.newtouchg@gmail.com">info.newtouch@gmail.com</a>
+                            </span>
+                        </div>
+                        <div style="margin-bottom: 25px; margin-left: 20px;">
+                            <span uk-icon="whatsapp" style="color: #d4a500"></span>
+                            <span style="margin-left: 20px; display: inline-block;">
+                                <a style="color: white" href="tel:0022893830561">00228 93 83 05 61</a>
+                            </span>
+                        </div>
+                        <div style="margin-left: 20px;">
+                            <span uk-icon="receiver" style="color: #d4a500"></span>
+                            <span style="margin-left: 20px; display: inline-block;">
+                                <a style="color: white" href="tel:0022896548721">00228 96 54 87 21</a>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="uk-card uk-width-1-3@l uk-width-1-2@s uk-card-default uk-card-body " style="background-color: transparent; color: white;box-shadow: 0 0 0;">
+                        <div class="uk-text-uppercase uk-text-bold" style="margin-left: 20px;">Liens</div>
+                        <div class="uk-hr" style="margin-top: 4px;"></div>
+                        <div style="margin-bottom: 25px; margin-left: 10px;">
+                            <span style="display: inline-block;">
+                                <a style="color: white" uk-scroll href="#about">A PROPOS</a>
+                            </span>
+                        </div>
+                        <div style="margin-bottom: 25px; margin-left: 10px;">
+                            <span style="display: inline-block;">
+                                <a style="color: white" uk-scroll href="#valeurs__">NOS VALEURS</a>
+                            </span>
+                        </div>
+                        <div style="margin-bottom: 25px; margin-left: 10px;">
+                            <span style="display: inline-block;">
+                                <a style="color: white" uk-scroll href="#offres_services__">OFFRES & SERVICES</a>
+                            </span>
+                        </div>
+                        <div style="margin-bottom: 25px; margin-left: 10px;">
+                            <span style="display: inline-block;">
+                                <a style="color: white" uk-scroll href="#partenaires__">PARTENAIRES</a>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="uk-card uk-width-1-3@l  uk-card-default uk-card-body " style="background-color: transparent; color: white;box-shadow: 0 0 0;">
+                        <div class="uk-text-uppercase uk-text-bold" style="margin-left: 20px;">Laissez-nous un message</div>
+                        <div class="uk-hr" style="margin-top: 4px;"></div>
+                        
+                        <form action="#" method="POST">
+
+                            <div class="uk-margin">
+                                <div class="uk-inline" style="margin-left: 10px;">
+                                    <span class="uk-form-icon" uk-icon="icon: user"></span>
+                                    <input class="uk-input" type="text" placeholder="Votre nom" style="height: 30px !important;">
+                                </div>
+                            </div>
+
+                            <div class="uk-margin">
+                                <div class="uk-inline" style="margin-left: 10px;">
+                                    <span class="uk-form-icon" uk-icon="icon: mail"></span>
+                                    <input class="uk-input" type="email" placeholder="Adresse email" style="height: 30px !important;">
+                                </div>
+                            </div>
+
+                            <div class="uk-margin">
+                                <div class="uk-inline" style="margin-left: 10px;">
+                                    <textarea style="width: 100%" class="uk-textarea" rows="3" cols="25" placeholder="Votre message s'il vous plait"></textarea>
+                                </div>
+                            </div>
+
+                            <div>
+                                <button style="margin-left: 10px;border-radius: 20px;" class="uk-button uk-button-primary uk-button-small">
+                                    <span>Envoyer</span>
+                                    <span uk-icon="forward" style="color: greenyellow"></span>
+                                </button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class=" uk-text-center" style="background-color: #161d27">
+                &copy; Copyright 2020 newtouchinvesting.com
             </div>
         </footer>
-
+        
     </body>
 </html>
