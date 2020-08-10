@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en" class="notranslate" translate="no">
+    <head>
+        <title>newtouch</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="google" content="notranslate" />
+        <meta property="og:title" content="New Touch Investing">
+        <meta property="og:description" content="Entreprise de conseil, d'assistance et coaching en investissement et vous offre également des packs d'investissement avec des RSI intéressant">
+        <meta property="og:image" content="https://siteweb.newtouchinvesting.com/images/logo/societes/IMG-20200705-WA0003.jpg">
+        <meta property="og:url" content="https://siteweb.newtouchinvesting.com/index.html">
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.0/dist/css/uikit.min.css" />
+        <link rel="stylesheet" href="../style.css" />
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=MuseoModerno"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fondamento"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster Two"/>
+
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.0/dist/js/uikit.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.0/dist/js/uikit-icons.min.js"></script>
+        <script src="https://kit.fontawesome.com/3930cdd8e9.js" crossorigin="anonymous"></script>
+        <script src="../index.js"></script>
+    </head>
+    <body>
+        <!-- OFF-CANVAS -->
+        <div id="offcanvas-overlay" uk-offcanvas="mode: slide; overlay: true;">
+            <div class="uk-offcanvas-bar uk-light">
+
+                <div class="uk-panel">
+                    <ul class="uk-nav uk-nav-default tm-nav">
+                        <li class="uk-nav-header">General</li>
+                        <!-- <li class="router-link-exact-active uk-active"><a href="#">Home</a></li>  -->
+                        <li class="uk-text-uppercase"><a href="#about-clone">A PROPOS</a></li> 
+                        <li class="uk-text-uppercase"><a href="#valeurs__">NOS VALEURS</a></li> 
+                        <li class="uk-text-uppercase"><a href="#offres_services__">OFFRES &amp; SERVICES</a></li>
+                        <li class="uk-text-uppercase"><a href="#partenaires__">PARTENAIRES</a></li>
+                        <li class="uk-text-uppercase"><a href="#avis-clone">TéMOIGNAGEs</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="uk-position-relative">
+            
+            <!-- SLIDESHOW -->
+            <div id="slideshow" class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="ratio: false; animation: pull">
+
+                <ul class="uk-slideshow-items" uk-height-viewport="offset-top: true; offset-bottom: 10">
+                    <li>
+                        <img src="../images/two-happy-men-working-together-new-business-project_171337-7319.jpg" alt="" uk-cover>
+                    </li>
+                </ul>
+
+                <div class="bradcumbContent">
+                    <h2 class="uk-position-center">CONSEILS & ASSISTANCES</h2>
+                </div>
+            </div>
+            <div class="bg-gradient"></div>
+
+            <!-- NAVBAR -->
+            <div class="uk-position-top">
+                <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
+                    <nav id="navbar" class="uk-navbar uk-margin uk-background-secondary uk-light" uk-navbar="mode: hover" style="position: relative; z-index: 980; background: rgba(0, 0, 0, 0.48);">
+                        
+                        <a href="" class="uk-navbar-item uk-logo">
+                            <img data-src="../images/logo/Webp.net-resizeimage.png" style="height: 100px" uk-img>
+                            
+                            <div id="logo-words" translate="no" class="uk-flex uk-flex-column uk-width-1-2" style="font-weight: bold;">
+                                <div class="uk-card">
+                                    <span style="color: #d4a500;">NEW</span> <span style="color: #356db9;">TOUCH</span>
+                                </div>
+                                <span class="uk-card uk-align-center uk-text-center" style="color: white; font-size: 13px;">INVESTING</span>
+                            </div>
+                        </a>
+
+                        <div class="uk-navbar-right">
+
+                            <ul class="uk-navbar-nav uk-visible@m">
+                                <li id="navbar-item-about" class="navbar-item uk-active">
+                                    <a uk-scroll href="#about" class="uk-text-uppercase">A PROPOS</a>
+                                    <hr class="uk-divider-small navbar-item-divider nav-item-divider" style="display: none;">
+                                </li>
+                                <li id="navbar-item-valeurs" class="navbar-item">
+                                    <a uk-scroll href="#valeurs__" class="uk-text-uppercase">NOS VALEURS</a>
+                                    <hr class="uk-divider-small navbar-item-divider nav-item-divider" style="display: none;">
+                                </li>
+                                <li id="navbar-item-offres_services__" class="navbar-item">
+                                    <a uk-scroll href="#offres_services__" class="uk-text-uppercase">OFFRES &amp; SERVICES</a>
+                                    <hr class="uk-divider-small navbar-item-divider nav-item-divider" style="display: none;">
+                                </li>
+                                <li id="navbar-item-partenaires" class="navbar-item">
+                                    <a uk-scroll href="#partenaires__" class="uk-text-uppercase">PARTENAIRES</a>
+                                    <hr class="uk-divider-small navbar-item-divider nav-item-divider" style="display: none;">
+                                </li>
+                                <li id="navbar-item-avis" class="navbar-item">
+                                    <a uk-scroll href="#avis-clone" class="uk-text-uppercase">TéMOIGNAGES</a>
+                                    <hr class="uk-divider-small navbar-item-divider nav-item-divider" style="display: none;">
+                                </li>
+
+                                <!-- <li>
+                                    <a class="uk-navbar-toggle" href="#" uk-toggle="target: #offcanvas-overlay">
+                                        <span id="id-contact-us" uk-icon="icon: mail; ratio: 2.5"></span>
+                                    </a>
+                                </li> -->
+                            </ul>
+                            
+                            <a class="uk-navbar-toggle uk-hidden@m" uk-navbar-toggle-icon href="#" uk-toggle="target: #offcanvas-overlay" style="color: #505255;"></a>
+
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        
+        <div class="uk-container" id="main-content">
+            <div style="margin-top: 100px"> sssssssssssssssssssss</div>
+        </div>
+
+
+        <footer>
+            <div class="uk-flex uk-flex-center" style="padding-top : 10px;padding-bottom: 10px;background-color: #6451cf">
+                <!-- <div class="social-network-item">
+                    <a href="" class="uk-icon-button uk-margin-small-right" uk-icon="twitter" style="color: #1da1f2;"></a>
+                </div> -->
+                <div class="social-network-item">
+                    <a href="https://www.facebook.com/supportnewtouch/" class="uk-icon-button uk-margin-small-right" uk-icon="facebook" style="color: #0674e8;"></a>
+                </div>
+                <div class="social-network-item">
+                    <a href="https://api.whatsapp.com/send?phone=0022893830561" class="uk-icon-button uk-margin-small-right" uk-icon="whatsapp" style="color: #0dc144;"></a>
+                </div>
+                <div class="social-network-item">
+                    <a href="https://www.instagram.com/newtouchinvesting/" class="uk-icon-button uk-margin-small-right" uk-icon="instagram" style="color: white; background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);"></a>
+                </div>
+            </div>
+            
+            <div>
+                <div uk-grid style="background-color: #1d2331;padding-top: 0; padding-bottom: 0;">
+                    
+                    <div class="uk-card uk-width-1-3@l uk-width-1-2@s uk-card-default uk-card-body" style="background-color: transparent; color: white;box-shadow: 0 0 0;">
+                        <div class="uk-text-uppercase uk-text-bold" style="margin-left: 20px;">Contacts</div>
+                        <div class="uk-hr" style="margin-top: 4px;"></div>
+                        <div style="margin-top: 10px;margin-bottom: 25px;margin-left: 20px;">
+                            <!-- <span class="fas fa-map-marked-alt" style="color: #d4a500"></span> -->
+                            <span uk-icon="location" style="color: #d4a500"></span>
+                            <span style="margin-left: 20px; display: inline-block;">
+                                <a style="color: white" href="https://www.google.com/maps/place/6%C2%B012'26.2%22N+1%C2%B012'29.0%22E/@6.207271,1.2058663,17z/data=!3m1!4b1!4m17!1m10!4m9!1m4!2m2!1d1.20253!2d6.2043992!4e1!1m3!2m2!1d1.22959!2d6.1397!3m5!1s0x0:0x0!7e2!8m2!3d6.2072715!4d1.2080551">Agoè-Cacavéli</a>
+                            </span>
+                        </div>
+                        <div style="margin-bottom: 25px; margin-left: 20px;">
+                            <span uk-icon="mail" style="color: #d4a500"></span>
+                            <span style="margin-left: 20px; display: inline-block;">
+                                <a style="color: white" href="mailto:info.newtouchg@gmail.com">info.newtouch@gmail.com</a>
+                            </span>
+                        </div>
+                        <div style="margin-bottom: 25px; margin-left: 20px;">
+                            <span uk-icon="whatsapp" style="color: #d4a500"></span>
+                            <span style="margin-left: 20px; display: inline-block;">
+                                <a style="color: white" href="tel:0022893830561">00228 93 83 05 61</a>
+                            </span>
+                        </div>
+                        <div style="margin-left: 20px;">
+                            <span uk-icon="receiver" style="color: #d4a500"></span>
+                            <span style="margin-left: 20px; display: inline-block;">
+                                <a style="color: white" href="tel:0022896548721">00228 96 54 87 21</a>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="uk-card uk-width-1-3@l uk-width-1-2@s uk-card-default uk-card-body " style="background-color: transparent; color: white;box-shadow: 0 0 0;">
+                        <div class="uk-text-uppercase uk-text-bold" style="margin-left: 20px;">Liens</div>
+                        <div class="uk-hr" style="margin-top: 4px;"></div>
+                        <div style="margin-bottom: 25px; margin-left: 10px;">
+                            <span style="display: inline-block;">
+                                <a style="color: white" uk-scroll href="#about">A PROPOS</a>
+                            </span>
+                        </div>
+                        <div style="margin-bottom: 25px; margin-left: 10px;">
+                            <span style="display: inline-block;">
+                                <a style="color: white" uk-scroll href="#valeurs__">NOS VALEURS</a>
+                            </span>
+                        </div>
+                        <div style="margin-bottom: 25px; margin-left: 10px;">
+                            <span style="display: inline-block;">
+                                <a style="color: white" uk-scroll href="#offres_services__">OFFRES & SERVICES</a>
+                            </span>
+                        </div>
+                        <div style="margin-bottom: 25px; margin-left: 10px;">
+                            <span style="display: inline-block;">
+                                <a style="color: white" uk-scroll href="#partenaires__">PARTENAIRES</a>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="uk-card uk-width-1-3@l  uk-card-default uk-card-body " style="background-color: transparent; color: white;box-shadow: 0 0 0;">
+                        <div class="uk-text-uppercase uk-text-bold" style="margin-left: 20px;">Laissez-nous un message</div>
+                        <div class="uk-hr" style="margin-top: 4px;"></div>
+                        
+                        <form action="#" method="POST">
+
+                            <div class="uk-margin">
+                                <div class="uk-inline" style="margin-left: 10px;">
+                                    <span class="uk-form-icon" uk-icon="icon: user"></span>
+                                    <input class="uk-input" type="text" placeholder="Votre nom" style="height: 30px !important;">
+                                </div>
+                            </div>
+
+                            <div class="uk-margin">
+                                <div class="uk-inline" style="margin-left: 10px;">
+                                    <span class="uk-form-icon" uk-icon="icon: mail"></span>
+                                    <input class="uk-input" type="email" placeholder="Adresse email" style="height: 30px !important;">
+                                </div>
+                            </div>
+
+                            <div class="uk-margin">
+                                <div class="uk-inline" style="margin-left: 10px;">
+                                    <textarea style="width: 100%" class="uk-textarea" rows="3" cols="25" placeholder="Votre message s'il vous plait"></textarea>
+                                </div>
+                            </div>
+
+                            <div>
+                                <button style="margin-left: 10px;border-radius: 20px;" class="uk-button uk-button-primary uk-button-small">
+                                    <span>Envoyer</span>
+                                    <span uk-icon="forward" style="color: greenyellow"></span>
+                                </button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class=" uk-text-center" style="background-color: #161d27">
+                &copy; Copyright 2020 newtouchinvesting.com
+            </div>
+        </footer>
+        
+    </body>
+</html>

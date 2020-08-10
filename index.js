@@ -34,9 +34,14 @@ function activateNavbarItem(item) {
 
 
 document.addEventListener('DOMContentLoaded', function () {
-	UIkit.slideshow("#slideshow").startAutoplay();
-	UIkit.slider("#partenaires-slider").startAutoplay();
-	UIkit.slider("#avis-slider").startAutoplay();
+	if (UIkit.slideshow("#slideshow"))
+		UIkit.slideshow("#slideshow").startAutoplay();
+
+	if (UIkit.slider("#partenaires-slider"))
+		UIkit.slider("#partenaires-slider").startAutoplay();
+
+	if (UIkit.slider("#avis-slider"))
+		UIkit.slider("#avis-slider").startAutoplay();
 
 	var body = document.getElementsByTagName("body")[0];
 	body.onscroll = onWindowScroll;

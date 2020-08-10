@@ -30,8 +30,14 @@ footer .cr{
 	background: linear-gradient(to left, #383737, #3f51b5);
 }
 .social-network-item{
-	margin-left: 10px;
-	margin-right: 10px;
+	margin-left: 50px;
+    margin-right: 50px;
+}
+.social-network-item a:hover{
+	/*box-shadow: 5px 5px 5px #FFF !important;*/
+	-webkit-box-shadow: 10px 10px 28px 6px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 28px 6px rgba(0,0,0,0.75);
+	box-shadow: 10px 10px 28px 6px rgba(0,0,0,0.75);
 }
 .valeur-item{
 	box-shadow: 0 0 0;
@@ -244,7 +250,7 @@ footer .cr{
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
     background-color: #fff!important;
     margin-bottom: 1rem;
-    padding: 3rem!important;
+    padding: 30px!important;
 }
 .blockquote-custom-icon {
     width: 50px;
@@ -271,6 +277,14 @@ footer .cr{
     border-top: 1px solid #dee2e6!important;
     margin-top: 1.5rem!important;
     padding-top: 1.5rem!important;
+}
+#partenaires-dotnav .uk-active a{
+	padding: 6px;
+	background-color: #eb6a0c !important;
+}
+#avis-dotnav .uk-active a{
+	padding: 6px;
+	background-color: #eb6a0c !important;
 }
 
 
