@@ -17,6 +17,8 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat"/>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fondamento"/>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster Two"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cardo"/>
 
         <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.0/dist/js/uikit.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.0/dist/js/uikit-icons.min.js"></script>
@@ -30,13 +32,11 @@
 
                 <div class="uk-panel">
                     <ul class="uk-nav uk-nav-default tm-nav">
-                        <li class="uk-nav-header">General</li>
-                        <!-- <li class="router-link-exact-active uk-active"><a href="#">Home</a></li>  -->
-                        <li class="uk-text-uppercase"><a href="#about-clone">A PROPOS</a></li> 
-                        <li class="uk-text-uppercase"><a href="#valeurs__">NOS VALEURS</a></li> 
-                        <li class="uk-text-uppercase"><a href="#offres_services__">OFFRES &amp; SERVICES</a></li>
-                        <li class="uk-text-uppercase"><a href="#partenaires__">PARTENAIRES</a></li>
-                        <li class="uk-text-uppercase"><a href="#avis-clone">TéMOIGNAGEs</a></li>
+                        <li class="uk-text-uppercase"><a uk-scroll href="#about-clone">A PROPOS</a></li> 
+                        <li class="uk-text-uppercase"><a uk-scroll href="#valeurs__">NOS VALEURS</a></li> 
+                        <li class="uk-text-uppercase"><a uk-scroll href="#offres_services__">OFFRES &amp; SERVICES</a></li>
+                        <li class="uk-text-uppercase"><a uk-scroll href="#partenaires__">PARTENAIRES</a></li>
+                        <li class="uk-text-uppercase"><a uk-scroll href="#avis-clone">TéMOIGNAGEs</a></li>
                     </ul>
                 </div>
 
@@ -52,10 +52,10 @@
                     <li>
                         <img src="images/hand-male-holding-light-bulb-copy-space-accounting_43284-1669.jpg" alt="" uk-cover>
                         <div class="uk-card uk-card-default uk-card-body uk-position-center-left uk-margin-large-left uk-width-1-3@m uk-width-1-1@xs" style="box-shadow: 0 5px 15px; background: linear-gradient(to right, #edeaea, #97b3b0f0);">
-                            <h3 class="uk-card-title" style="color: #d4a500;text-shadow: 2px 2px gray;">
+                            <h3 class="uk-card-title" style="color: #d4a500;text-shadow: 2px 2px gray;margin: 0 15px 0 0;">
                                 Votre satisfaction avant la nôtre.
                             </h3>
-                            <p style="font-family: 'Fondamento'; font-size: 20px; color: black;">
+                            <p style="font-family: 'Fondamento'; font-size: 20px; color: black; margin: 0 15px 0 0;">
                                 L'assurance de notre enrichissement passe par l'enrichissement de nos clients (votre enrichissement), joignez vous donc à nous et enrichissons nous ensemble.
                             </p>
                         </div>
@@ -63,10 +63,10 @@
                     <li>
                         <img src="images/building.jpeg" alt="" uk-cover>
                         <div class="uk-card uk-card-default uk-position-center-left uk-margin-large-left uk-width-1-3@m uk-width-1-1@xs" style="box-shadow: 0 5px 15px #402ed4ab; padding: 20px; background: linear-gradient(to right, #edeaea, #97b3b0f0);" >
-                            <h3 class="uk-card-title" style="color: #d4a500;text-shadow: 2px 2px gray;">
+                            <h3 class="uk-card-title" style="color: #d4a500;text-shadow: 2px 2px gray;margin: 0 15px 0 0;">
                                 Chez NTI vous êtes tous particuliers.
                             </h3>
-                            <p style="font-family: 'Fondamento'; font-size: 20px; color: black;">
+                            <p style="font-family: 'Fondamento'; font-size: 20px; color: black; margin: 0 15px 0 0;">
                                 Nous avons une solution taillée sur mesure pour chacun de vous.
                             </p>
                         </div>
@@ -74,10 +74,10 @@
                     <li>
                         <img src="images/WhatsApp Image 2020-07-16 at 15.34.36.jpeg" alt="" uk-cover>
                         <div class="uk-card uk-card-default uk-card-body uk-position-center-left uk-margin-large-left uk-width-1-3@m uk-width-1-1@xs" style="box-shadow: 0 5px 15px #402ed4ab; background: linear-gradient(to right, #edeaea, #97b3b0f0);">
-                            <h3 class="uk-card-title" style="color: #d4a500;text-shadow: 2px 2px gray;">
+                            <h3 class="uk-card-title" style="color: #d4a500;text-shadow: 2px 2px gray;margin: 0 15px 0 0;">
                                 Une nouvelle façon d'investir.
                             </h3>
-                            <p style="font-family: 'Fondamento'; font-size: 20px; color: black;">
+                            <p style="font-family: 'Fondamento'; font-size: 20px; color: black; margin: 0 15px 0 0;">
                                 Commence où tu es, utilises ce que tu as, fais ce que tu peux et avance avec nous.
                             </p>
                         </div>
@@ -99,7 +99,7 @@
                     <nav id="navbar" class="uk-navbar uk-margin uk-background-secondary uk-light" uk-navbar="mode: hover" style="position: relative; z-index: 980; background: rgba(0, 0, 0, 0.48);">
                         
                         <a href="" class="uk-navbar-item uk-logo">
-                            <img data-src="images/logo/Webp.net-resizeimage.png" style="height: 100px" uk-img>
+                            <img data-src="images/logo/Webp.net-resizeimage.png" style="height: 73px" uk-img/>
                             
                             <div id="logo-words" translate="no" class="uk-flex uk-flex-column uk-width-1-2" style="font-weight: bold;">
                                 <div class="uk-card">
@@ -156,7 +156,7 @@
                     <div class="uk-panel" style="color: black;">
                         <img class="uk-align-left uk-margin-remove-adjacent uk-border-rounded uk-width-1-2@m" src="images/salle_de_reunion.jpeg" alt="image" >
                         <p style="font-weight: normal;text-align: justify;">
-                            <strong style="font-size: 20px;">NEW TOUCH INVESTING(NTI)</strong> est une entreprise de conseil, 
+                            <strong style="font-size: 20px; display: block;">NEW TOUCH INVESTING(NTI)</strong> Nous sommes une entreprise de conseil, 
                             coaching et formation en investissement boursier, 
                             gestion de capitaux et financement de projets.<br/>
                             Nous mettons à votre disposition des experts conseillers pour vos indécisions face à certains investissements. 
@@ -169,12 +169,12 @@
                         </p>
                         <p style="font-weight: normal;text-align: justify;">
                             Vous pouvez également confiez la gestion de votre capital à NTI pour être investi en bourse 
-                            par nos experts trader en vue de vous octroyer un retour sur investissement assuré.
+                            par nos experts traders en vue de vous octroyer un retour sur investissement assuré.
                         </p>
                         <div>
-                            <a uk-scroll href="#offres_services">
-                                <button class="uk-button uk-align-center circle-btn default-btn">
-                                    <span uk-icon="icon: plus"></span> nos services
+                            <a uk-scroll href="#offres_services__" class="text-deco-none">
+                                <button class="uk-button uk-align-center circle-btn default-btn offres_services_btn">
+                                    nos services <i class="fas fa-chevron-right"></i>
                                 </button>
                             </a>
                         </div>
@@ -192,7 +192,7 @@
             <div id="valeurs" class="uk-section">
                 <div class="uk-container">
                     <div style="width: 80%; margin: auto;">
-                        <div class="uk-child-width-1-3@m" uk-grid uk-scrollspy="cls: uk-animation-slide-left; target: .uk-card; delay: 300; repeat: false">
+                        <div class="uk-child-width-1-3@s" uk-grid uk-scrollspy="cls: uk-animation-slide-left; target: .uk-card; delay: 300; repeat: false">
                             <div class="uk-box-shadow-hover-small">
                                 <div class="uk-card uk-card-default uk-card-body valeur-item" style="padding: 0;">
                                     <div class="uk-flex uk-flex-column uk-width-1-1">
@@ -251,11 +251,12 @@
                                 <img src="images/two-happy-men-working-together-new-business-project_171337-7319.jpg" alt="" style="transition: transform 1s;">
                                 <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
                                     <p class="uk-margin-remove">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+                                        Ne faites plus d’erreur dans les investissements. 
+                                        Faites vous conseiller pour mieux assurer la rentabilité de votre portefeuille.
                                     </p>
-                                    <a>
+                                    <a href="offres-services/conseils_assistances.html" class="text-deco-none">
                                         <button class="uk-button uk-align-center circle-btn default-btn offres_services_btn">
-                                            <span uk-icon="icon: plus"></span> En savoir plus
+                                            En savoir plus <i class="fas"></i>
                                         </button>
                                     </a>
                                 </div>
@@ -271,17 +272,20 @@
                             <div class="uk-inline-clip uk-transition-toggle offres_services_item" tabindex="0">
                                 <img src="images/Webp.net-resizeimage.jpg" alt="" style="transition: transform 1s;">
                                 <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
-                                    <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                                    <a>
+                                    <p class="uk-margin-remove">
+                                        Soubscrivez à notre plateforme de formation et bénéficiez d’un 
+                                        dépôt réel gratuit a l’issu de votre formation. Juste une formation et toute une vie qui change.
+                                    </p>
+                                    <a href="offres-services/coaching-formations.html" class="text-deco-none">
                                         <button class="uk-button uk-align-center circle-btn default-btn offres_services_btn">
-                                            <span uk-icon="icon: plus"></span> En savoir plus
+                                            En savoir plus <i class="fas"></i>
                                         </button>
                                     </a>
                                 </div>
                             </div>
                             <div class="uk-margin-small-top uk-h4 offres_services_item_title">
                                 <div class="section-head">
-                                    <p class="uk-position-center">Coaching &amp; Formation</p>
+                                    <p class="uk-position-center">Coaching &amp; Formations</p>
                                 </div>
                             </div>
                         </div>
@@ -290,10 +294,14 @@
                             <div class="uk-inline-clip uk-transition-toggle offres_services_item" tabindex="0">
                                 <img src="images/business-man-accounting-calculating-cost-economic-budget-investment-saving_18497-1063.jpg" alt="" style="transition: transform 1s;">
                                 <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
-                                    <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                                    <a>
+                                    <p class="uk-margin-remove">
+                                        Nous mettons à votre disposition des packs exceptionnels pour un investissement sûr, 
+                                        garanti avec une gestion rigoureuse et professionnel. Une seule chose à dire, 
+                                        faites-nous juste confiance.
+                                    </p>
+                                    <a href="offres-services/gestion-capitaux.html" class="text-deco-none">
                                         <button class="uk-button uk-align-center circle-btn default-btn offres_services_btn">
-                                            <span uk-icon="icon: plus"></span> En savoir plus
+                                            En savoir plus <i class="fas"></i>
                                         </button>
                                     </a>
                                 </div>
@@ -308,11 +316,16 @@
                         <div class="uk-text-center">
                             <div class="uk-inline-clip uk-transition-toggle offres_services_item" tabindex="0">
                                 <img src="images/top-view-businessman-signing-documents_1098-3387.jpg" alt="" style="transition: transform 1s;">
-                                <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
-                                    <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                                    <a>
+                                <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default" style="padding: 6px 30px;">
+                                    <p class="uk-margin-remove">
+                                        Vous avez en tête de mener à terme une idée susceptible d’être bénéfique a plusieurs personnes et 
+                                        surtout de rapporter beaucoup d’argent  nous mettons a votre disposition des experts hautement qualifies 
+                                        qui vous aideront a étudier de façon plus pointue votre projet de voir les avantages les inconvénients et 
+                                        surtout de vous proposer la solution la plus optimale pour la finalisation dudit projet.
+                                    </p>
+                                    <a href="offres-services/financement-projets.html" class="text-deco-none">
                                         <button class="uk-button uk-align-center circle-btn default-btn offres_services_btn">
-                                            <span uk-icon="icon: plus"></span> En savoir plus
+                                            En savoir plus <i class="fas"></i>
                                         </button>
                                     </a>
                                 </div>
@@ -339,7 +352,7 @@
             <div id="partenaires" class="uk-section">
                 <div class="uk-container uk-margin-top">
                     <div id="partenaires-slider" class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
-                        <ul class="uk-slider-items uk-flex-center uk-child-width-1-4@m uk-grid" style="cursor: grab;">
+                        <ul class="uk-slider-items uk-flex-center uk-child-width-1-2 uk-child-width-1-4@l uk-grid" style="cursor: grab;">
                             <li class="uk-height-small">
                                 <div class="uk-panel uk-height-small">
                                     <a>
@@ -405,36 +418,53 @@
                                 <li>
                                     <blockquote class="blockquote blockquote-custom bg-white p-5 shadow rounded" style="margin-top: 30px;">
                                         <div class="blockquote-custom-icon bg-info shadow-sm"><i class="fa fa-quote-left text-white"></i></div>
-                                        <p class="mb-0 mt-2 font-italic" style="color: #333;">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo <a href="#" style="color: #e69b13;" class="text-info">@consequat</a>."</p>
-                                        <footer class="blockquote-footer pt-4 mt-4 border-top" style="color: #333;">Someone famous in
-                                            <cite title="Source Title">Source Title</cite>
+                                        <p class="mb-0 mt-2 font-italic" style="color: #333;">
+                                            "New Touch investing est une référence qui m’inspire toute confiance comme structure d’investissement. 
+                                            Les cours sont très claire, précis et bien détaillé. 
+                                            Le plus intéressant pour moi est l'attention particulière  que j'ai reçu auprès du coach et surtout 
+                                            l'accompagnement du coach jusqu'à ce que je ne devienne un Trader rentable et qu’il finisse par me prendre dans 
+                                            leur équipe. Merci NTI."<br/>
+                                            <a style="color: #e69b13;text-decoration: none;" class="text-info">Éric KPAIKPAI</a>
+                                        </p>
+                                        <footer class="blockquote-footer pt-4 mt-4 border-top" style="color: #333;">
+                                            <!-- Someone famous in -->
+                                            <cite title="Source Title">Trader a New Touch Investing </cite>
                                         </footer>
                                     </blockquote>
                                 </li>
                                 <li>
                                     <blockquote class="blockquote blockquote-custom bg-white p-5 shadow rounded" style="margin-top: 30px;">
                                         <div class="blockquote-custom-icon bg-info shadow-sm"><i class="fa fa-quote-left text-white"></i></div>
-                                        <p class="mb-0 mt-2 font-italic" style="color: #333;">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo <a href="#" style="color: #e69b13;" class="text-info">@consequat</a>."</p>
-                                        <footer class="blockquote-footer pt-4 mt-4 border-top" style="color: #333;">Someone famous in
-                                            <cite title="Source Title">Source Title</cite>
+                                        <p class="mb-0 mt-2 font-italic" style="color: #333;">
+                                            "New Touch Investing, pour avoir eu la chance d’investir auprès de cette structure, je peux certifier que c’est une société très sérieuse, fiable avec une disponibilité pas possible. J’ai eu à échanger avec le président de la société avant mon investissement et j’ai été ravi de toutes les réponses qu’il m’a apporté concernant mes inquiétudes."<br/>
+                                            <a style="color: #e69b13;text-decoration: none;" class="text-info">Sergio AGBADO</a>
+                                        </p>
+                                        <footer class="blockquote-footer pt-4 mt-4 border-top" style="color: #333;">
+                                            <cite title="Source Title">Investisseur</cite>
                                         </footer>
                                     </blockquote>
                                 </li>
                                 <li>
                                     <blockquote class="blockquote blockquote-custom bg-white p-5 shadow rounded" style="margin-top: 30px;">
                                         <div class="blockquote-custom-icon bg-info shadow-sm"><i class="fa fa-quote-left text-white"></i></div>
-                                        <p class="mb-0 mt-2 font-italic" style="color: #333;">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo <a href="#" style="color: #e69b13;" class="text-info">@consequat</a>."</p>
-                                        <footer class="blockquote-footer pt-4 mt-4 border-top" style="color: #333;">Someone famous in
-                                            <cite title="Source Title">Source Title</cite>
+                                        <p class="mb-0 mt-2 font-italic" style="color: #333;">
+                                            "Ça fait déjà 7 mois que j'investis dans cette entreprise et je peux vous assurer que les retours sur investissement ont toujours été ponctuel et ça m'a vraiment aidé à réaliser beaucoup de mes projets.. Je peux aujourd'hui dire que je leur fais confiance à 99% et vu l'évolution que prend l'entreprise ça démontre combien de fois il y'a du sérieux dans sa gestion... Pour moi c'est un investissement responsable et ça ne fait que commencer les bonnes choses sont encore devant... Force à vous 👏🏼👏🏼."<br/>
+                                            <a style="color: #e69b13;text-decoration: none;" class="text-info">Bérubé PATO</a>
+                                        </p>
+                                        <footer class="blockquote-footer pt-4 mt-4 border-top" style="color: #333;">
+                                            <cite title="Source Title">Investisseur</cite>
                                         </footer>
                                     </blockquote>
                                 </li>
                                 <li>
                                     <blockquote class="blockquote blockquote-custom bg-white p-5 shadow rounded" style="margin-top: 30px;">
                                         <div class="blockquote-custom-icon bg-info shadow-sm"><i class="fa fa-quote-left text-white"></i></div>
-                                        <p class="mb-0 mt-2 font-italic" style="color: #333;">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo <a href="#" style="color: #e69b13;" class="text-info">@consequat</a>."</p>
-                                        <footer class="blockquote-footer pt-4 mt-4 border-top" style="color: #333;">Someone famous in
-                                            <cite title="Source Title">Source Title</cite>
+                                        <p class="mb-0 mt-2 font-italic" style="color: #333;">
+                                            "J'ai toujours eu peur des investissements par crainte d'être arnaqué. Mais sincèrement après 02 mois chez NTI cette peur s'est dissipée car c'est une entreprise fiable  et très responsable . Ils respectent toujours leur engagement et inspirent beaucoup la confiance c'est pour cela que je vous exhorte à investir vite et  massivement sans crainte dans cette entreprise car avec eux vous avez la garantie d'un lendemain meilleur."<br/>
+                                            <a style="color: #e69b13;text-decoration: none;" class="text-info">Destin BAKO</a>
+                                        </p>
+                                        <footer class="blockquote-footer pt-4 mt-4 border-top" style="color: #333;">
+                                            <cite title="Source Title">Investisseur</cite>
                                         </footer>
                                     </blockquote>
                                 </li>
@@ -449,7 +479,7 @@
 
 
         <footer>
-            <div class="uk-flex uk-flex-center" style="padding-top : 10px;padding-bottom: 10px;background-color: #6451cf">
+            <div class="uk-flex uk-flex-center" style="padding-top : 10px;padding-bottom: 10px;background-color: #c6c3d8">
                 <!-- <div class="social-network-item">
                     <a href="" class="uk-icon-button uk-margin-small-right" uk-icon="twitter" style="color: #1da1f2;"></a>
                 </div> -->
@@ -474,25 +504,25 @@
                             <!-- <span class="fas fa-map-marked-alt" style="color: #d4a500"></span> -->
                             <span uk-icon="location" style="color: #d4a500"></span>
                             <span style="margin-left: 20px; display: inline-block;">
-                                <a style="color: white" href="https://www.google.com/maps/place/6%C2%B012'26.2%22N+1%C2%B012'29.0%22E/@6.207271,1.2058663,17z/data=!3m1!4b1!4m17!1m10!4m9!1m4!2m2!1d1.20253!2d6.2043992!4e1!1m3!2m2!1d1.22959!2d6.1397!3m5!1s0x0:0x0!7e2!8m2!3d6.2072715!4d1.2080551">Agoè-Cacavéli</a>
+                                <a style="color: white" href="https://maps.google.com/maps?q=6.199008941650391%2C1.2041610479354858&z=17&hl=fr">Agbalépédo sur les pavés de LK non loins de l'église Baptiste</a>
                             </span>
                         </div>
                         <div style="margin-bottom: 25px; margin-left: 20px;">
                             <span uk-icon="mail" style="color: #d4a500"></span>
                             <span style="margin-left: 20px; display: inline-block;">
-                                <a style="color: white" href="mailto:info.newtouchg@gmail.com">info.newtouch@gmail.com</a>
+                                <a style="color: white" href="mailto:info@newtouchinvesting.com">info@newtouchinvesting.com</a>
                             </span>
                         </div>
                         <div style="margin-bottom: 25px; margin-left: 20px;">
                             <span uk-icon="whatsapp" style="color: #d4a500"></span>
                             <span style="margin-left: 20px; display: inline-block;">
-                                <a style="color: white" href="tel:0022893830561">00228 93 83 05 61</a>
+                                <a style="color: white" href="tel:+22893830561">+228 98 53 39 29</a>
                             </span>
                         </div>
                         <div style="margin-left: 20px;">
                             <span uk-icon="receiver" style="color: #d4a500"></span>
                             <span style="margin-left: 20px; display: inline-block;">
-                                <a style="color: white" href="tel:0022896548721">00228 96 54 87 21</a>
+                                <a style="color: white" href="tel:+22896548721">+228 92 37 22 29</a>
                             </span>
                         </div>
                     </div>
@@ -529,27 +559,27 @@
                         <form action="#" method="POST">
 
                             <div class="uk-margin">
-                                <div class="uk-inline" style="margin-left: 10px;">
+                                <div class="uk-inline" style="margin: auto; margin-left: 20px; display: block;">
                                     <span class="uk-form-icon" uk-icon="icon: user"></span>
-                                    <input class="uk-input" type="text" placeholder="Votre nom" style="height: 30px !important;">
+                                    <input class="uk-input" type="text" placeholder="Votre nom" style="border-radius: 20px;">
                                 </div>
                             </div>
 
                             <div class="uk-margin">
-                                <div class="uk-inline" style="margin-left: 10px;">
+                                <div class="uk-inline" style="margin: auto; margin-left: 20px; display: block;">
                                     <span class="uk-form-icon" uk-icon="icon: mail"></span>
-                                    <input class="uk-input" type="email" placeholder="Adresse email" style="height: 30px !important;">
+                                    <input class="uk-input" type="email" placeholder="Adresse email" style="border-radius: 20px;">
                                 </div>
                             </div>
 
                             <div class="uk-margin">
-                                <div class="uk-inline" style="margin-left: 10px;">
-                                    <textarea style="width: 100%" class="uk-textarea" rows="3" cols="25" placeholder="Votre message s'il vous plait"></textarea>
+                                <div class="uk-inline" style="margin: auto; margin-left: 20px; display: block;">
+                                    <textarea style="width: 100%;border-radius: 5px;" class="uk-textarea" rows="3" cols="25" placeholder="Votre message s'il vous plait"></textarea>
                                 </div>
                             </div>
 
                             <div>
-                                <button style="margin-left: 10px;border-radius: 20px;" class="uk-button uk-button-primary uk-button-small">
+                                <button style="border-radius: 20px;margin: auto; display: block;" class="uk-button uk-button-primary uk-button-small">
                                     <span>Envoyer</span>
                                     <span uk-icon="forward" style="color: greenyellow"></span>
                                 </button>
@@ -559,8 +589,8 @@
                     </div>
                 </div>
             </div>
-            <div class=" uk-text-center" style="background-color: #161d27">
-                &copy; Copyright 2020 newtouchinvesting.com
+            <div class=" uk-text-center" style="background-color: #161d27;font-size: 12px;font-weight: bold;">
+                &copy; 2020 POWERED BY NEWTOUCHINVESTING
             </div>
         </footer>
         

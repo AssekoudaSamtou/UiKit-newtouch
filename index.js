@@ -28,7 +28,8 @@ function activateNavbarItem(item) {
 	for (var i = navbarItems.length - 1; i >= 0; i--) {
 		navbarItems[i].getElementsByTagName("hr")[0].style.display = "none";
 	}
-	document.getElementById("navbar-item-" + item).getElementsByTagName("hr")[0].style.display = "block";
+	if (document.getElementById("navbar-item-" + item))
+		document.getElementById("navbar-item-" + item).getElementsByTagName("hr")[0].style.display = "block";
 	document.getElementsByClassName("navbar-item-divider");
 }
 
@@ -42,6 +43,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	if (UIkit.slider("#avis-slider"))
 		UIkit.slider("#avis-slider").startAutoplay();
+	
+	document.querySelectorAll("#offcanvas-overlay .uk-offcanvas-bar .uk-nav li a").forEach(element => {
+		element.addEventListener('click',  () => {
+			UIkit.offcanvas("#offcanvas-overlay").hide();
+		});
+	});
 
 	var body = document.getElementsByTagName("body")[0];
 	body.onscroll = onWindowScroll;
@@ -59,6 +66,5 @@ document.addEventListener('DOMContentLoaded', function () {
 			this.getElementsByTagName("hr")[0].style.display = "block";
 			document.getElementsByClassName("navbar-item-divider");
 		});
-		
 	}
 });

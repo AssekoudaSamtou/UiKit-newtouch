@@ -11,9 +11,6 @@ footer .uk-flex{
 	padding-bottom: 40px;
 	color: white;
 }
-footer .cr{
-	background: #575e68;
-}
 #main-content{
 	margin: 0;
 	padding: 0;
@@ -46,13 +43,15 @@ footer .cr{
 	position: relative;
     /*width: 392px;*/
     max-width: 50%;
+    padding: 10px 0 10px 0;
     height: 50px;
     bottom: 24px;
     left: 50%;
     margin-left: -26%;
     z-index: 100;
     background: linear-gradient(to right, #eb6a0c, #d4a500);
-    text-align: center;	
+    text-align: center;
+    font-family: 'Roboto', bold;
 }
 .offres_services_item_title .section-head{
 	position: relative;
@@ -69,6 +68,7 @@ footer .cr{
 .bg-gradient .section-head h2{
 	text-transform: uppercase;
 	color: white;
+	font-family: 'Roboto', bold;
 }
 .offres_services_item_title .section-head p{
 	color: whitesmoke;
@@ -93,11 +93,13 @@ footer .cr{
 }
 
 #offcanvas-overlay .uk-offcanvas-bar {
-	background: #dcdcdc;
+	background: linear-gradient(to right, #edeaea, #97b3b0f0);
 }
 
 #offcanvas-overlay .uk-offcanvas-bar .uk-panel .uk-nav li a {
 	color: #505255;
+	font-weight: bolder;
+	font-size: 19px;
 }
 
 .circle-btn {
@@ -133,6 +135,7 @@ footer .cr{
 #logo-words{
 	width: 146px;
 	height: 55px;
+	/*font-family: 'Merriweather';*/
 }
 
 #logo-words .uk-align-center{
@@ -170,6 +173,9 @@ footer .cr{
     font-family: "creamcake";
     color: black;
 }
+.bradcumbContent h2 {
+    font-family: 'Roboto', bold;
+}
 .navbar-item a {
 	color: white !important;
 }
@@ -183,6 +189,16 @@ footer .cr{
 	background-color: #604aaf8f;
 	color: white;
 }
+
+@media screen and (max-width: 600px) {
+	.offres_services_item .uk-overlay p{
+		font-size: 12px;
+	}
+	#partenaires-slider img {
+		margin: 0 28%;
+	}
+}
+
 .slidenav{
 	background-color: white !important;
 	color: yellow !important;
@@ -195,32 +211,47 @@ footer .cr{
 }
 
 .nos-valeurs-items-image {
-	/*margin: 0 !important;*/
+	
 }
 .uk-card-primary.uk-card-body .uk-dotnav>*>*, .uk-card-primary>:not([class*=uk-card-media]) .uk-dotnav>*>*, .uk-card-secondary.uk-card-body .uk-dotnav>*>*, .uk-card-secondary>:not([class*=uk-card-media]) .uk-dotnav>*>*, .uk-light .uk-dotnav>*>*, .uk-offcanvas-bar .uk-dotnav>*>*, .uk-overlay-primary .uk-dotnav>*>*, .uk-section-primary:not(.uk-preserve-color) .uk-dotnav>*>*, .uk-section-secondary:not(.uk-preserve-color) .uk-dotnav>*>*, .uk-tile-primary:not(.uk-preserve-color) .uk-dotnav>*>*, .uk-tile-secondary:not(.uk-preserve-color) .uk-dotnav>*>* {
     background-color: #4461dc;
-    /*border-color: rgb(255 255 255 / 90%);*/
 }
 
 @media screen and (max-width: 640px) {
-  .bg-gradient .section-head {
-    position: relative;
-    /* width: 392px; */
-    max-width: 90%;
-    height: 50px;
-    bottom: 24px;
-    left: 31%;
-    margin-left: -26%;
-    z-index: 100;
-    background: linear-gradient(to right, #eb6a0c, #d4a500);
-    text-align: center;
-  }
-  .bg-gradient .section-head h2{
-  	width: 90%;
-  }
-  .uk-height-small img{
+	.bg-gradient .section-head {
+		position: relative;
+		/* width: 392px; */
+		max-width: 90%;
+		height: 50px;
+		bottom: 33px;
+		left: 31%;
+		margin-left: -26%;
+		z-index: 100;
+		background: linear-gradient(to right, #eb6a0c, #d4a500);
+		text-align: center;
+	}
+	.bg-gradient .section-head h2{
+		width: 90%;
+		font-size: 23px;
+	}
+	.uk-height-small img {
+		
+	}
+	#valeurs .valeur-item-text {
+		font-size: inherit !important;
+	}
+	.uk-logo {
+		height: 73px!important;
+	}
+}
 
-  }
+@media screen and (max-width: 900px) {
+	#valeurs .valeur-item-text {
+		font-size: inherit !important;
+	}
+	.bg-gradient .section-head h2{
+		
+	}
 }
 
 #about .uk-panel{
@@ -234,9 +265,32 @@ footer .cr{
 .offres_services_btn{
 	margin-bottom: 0;
 	margin-top: 20px;
-	color: #d4a500;
+	color: #ffffff;
 	font-weight: bolder;
+	background-color: #0F0F6D!important;
+	border-radius: 10px !important;
+	transition: all .1s;
 }
+
+.offres_services_btn i::after {
+	content: "\f054";
+	opacity: 0;
+}
+.text-deco-none {
+	text-decoration: none!important;
+}
+.offres_services_btn:hover {
+	background: #2b2bff;
+	transition: all 0.5s;
+	border-radius: 10px;
+	box-shadow: 0px 6px 15px #0000ff61;
+	padding: 4px 40px 4px 35px;
+}
+.offres_services_btn:hover i::after {
+  opacity: 1;
+  transition: all .1s;
+}
+
 #main-content > .uk-section {
 	width: 95%;
 	margin-right: auto;
@@ -286,6 +340,9 @@ footer .cr{
 	padding: 6px;
 	background-color: #eb6a0c !important;
 }
+#navbar .uk-navbar-right .uk-navbar-nav * {
+	font-family: 'Roboto', bold !important;
+}
 
 
 /*outlined BTN*/
@@ -309,3 +366,19 @@ footer .cr{
 	  background: #7451eb3d;
 	  color: white;
 	}
+
+/*START CONSEILS ET ASSISTANCES*/
+/*START CONSEILS ET ASSISTANCES*/
+
+	.offres_services_details blockquote {
+		width: 88%; 
+		margin: 0 auto 100px auto;
+		font-family: 'Spectral', bold;
+		font-size: 2rem;
+	}
+	.offres_services_details blockquote footer {
+		border-top: 0px solid white!important;
+	}
+
+/*END CONSEILS ET ASSISTANCES*/
+/*END CONSEILS ET ASSISTANCES*/
