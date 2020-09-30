@@ -237,16 +237,29 @@ footer .uk-flex{
 	.uk-height-small img {
 		
 	}
-	#valeurs .valeur-item-text {
+	.valeur-item-text {
 		font-size: inherit !important;
 	}
 	.uk-logo {
 		height: 73px!important;
 	}
+
+	#notre_vision:after {
+		/*left: 88.4% !important;*/
+		left: calc(100% - 2.5rem) !important;
+	}
+	#notre_vision span, #nos_objectifs span {
+		margin-left: 0 !important;
+		width: unset !important;
+	}
+
+	#valeur__confiance, #valeur__rigeur {
+		width: 50%;
+	}
 }
 
 @media screen and (max-width: 900px) {
-	#valeurs .valeur-item-text {
+	.valeur-item-text {
 		font-size: inherit !important;
 	}
 	.bg-gradient .section-head h2{
@@ -270,6 +283,9 @@ footer .uk-flex{
 	background-color: #0F0F6D!important;
 	border-radius: 10px !important;
 	transition: all .1s;
+	display: inline;
+	float: right;
+	margin-right: 86px;
 }
 
 .offres_services_btn i::after {
@@ -343,6 +359,111 @@ footer .uk-flex{
 #navbar .uk-navbar-right .uk-navbar-nav * {
 	font-family: 'Roboto', bold !important;
 }
+
+
+/*CSS-only numbered lists with "drop" shapes*/
+/*CSS-only numbered lists with "drop" shapes*/
+:root {
+    --bg: #fdfdfd;
+    --highlight1: #ED4264;
+    --highlight2: #FFEDBC;
+    --color: #1a1e24;
+    --font-number: Montserrat, Roboto, Helvetica, Arial, sans-serif;
+    --font-head: "Space Mono", Consolas, Menlo, Monaco, "Courier New", monospace;
+    --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.item {
+    display: block;
+    clear: both;
+    counter-increment: list;
+    padding-bottom: 4rem;
+    font-size: 1.1rem;
+    line-height: 1.375;
+    position: relative;
+}
+
+.item:before {
+    font: bold 2.25rem/1 var(--font-number);
+    /*content: counter(list);*/
+    width: 5rem;
+    height: 5rem;
+    float: left;
+    margin: 0 1.5rem 0.75rem 0;
+    color: var(--bg);
+    background: var(--highlight1) linear-gradient(to bottom right, var(--highlight1) 25%, var(--highlight2));
+    text-shadow: 0 0 2px var(--highlight1);
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    shape-outside: ellipse();
+    z-index: 1;
+}
+#nos_valeurs:before{
+	content: "1";
+}
+#notre_vision:before{
+	content: "2";
+	float: right;
+	margin-right: 0;
+}
+#nos_objectifs:before{
+	content: "3";
+}
+
+#notre_vision span, #nos_objectifs span {
+	display: block;
+    width: 50%;
+    box-shadow: 2px 0px 14px 2px #275d96;
+    margin-left: 114px;
+    border-radius: 4px;
+    padding: 15px;
+    /*height: 200px;*/
+    font-size: 20px;
+}
+
+#notre_vision{
+	margin-top: 100px;
+}
+
+#notre_vision span {
+	margin-left: 35%;
+}
+
+#notre_vision h2 {
+	text-align: end;
+    margin-right: 124px;
+}
+
+#notre_vision h2, #nos_objectifs h2 {
+	margin-top: 50px;
+}
+
+.item:after {
+    width: 2.5rem;
+    height: 2.5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    background: var(--highlight1);
+    z-index: -1;
+    border-top-left-radius: 3px;
+}
+
+#notre_vision:after {
+    /*left: 94.6%;*/
+    left: calc(100% - 2.5rem);
+}
+
+.headline {
+    padding: 0rem 0 0 0;
+    margin: 0 0 1rem 0;
+    font: normal 2rem var(--font-head);
+}
+/*CSS-only numbered lists with "drop" shapes*/
+/*CSS-only numbered lists with "drop" shapes*/
 
 
 /*outlined BTN*/
