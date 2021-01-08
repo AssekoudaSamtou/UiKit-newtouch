@@ -52,6 +52,7 @@ footer .uk-flex{
     background: linear-gradient(to right, #eb6a0c, #d4a500);
     text-align: center;
     font-family: 'Roboto', bold;
+    border-radius: 10px;
 }
 .offres_services_item_title .section-head{
 	position: relative;
@@ -172,6 +173,7 @@ footer .uk-flex{
     text-align: center;
     font-family: "creamcake";
     color: black;
+    border-radius: 10px;
 }
 .bradcumbContent h2 {
     font-family: 'Roboto', bold;
@@ -335,6 +337,9 @@ footer .uk-flex{
     box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
     background-color: #17a2b8!important;
 }
+.more {
+    font-style: normal !important;
+}
 .blockquote-custom p {
     font-style: italic!important;
     margin-top: .5rem!important;
@@ -414,7 +419,7 @@ footer .uk-flex{
 
 #notre_vision span, #nos_objectifs span {
 	display: block;
-    width: 50%;
+    width: 56%;
     box-shadow: 2px 0px 14px 2px #275d96;
     margin-left: 114px;
     border-radius: 4px;
@@ -503,3 +508,86 @@ footer .uk-flex{
 
 /*END CONSEILS ET ASSISTANCES*/
 /*END CONSEILS ET ASSISTANCES*/
+
+
+
+
+
+
+/* Reset */
+*:before, *:after { content: ''; }
+hr {
+  border: 0;
+  margin: 1.35em auto;
+  max-width: 100%;
+  background-position: 50%;
+  box-sizing: border-box;
+}
+
+.accessory {
+  height: 6px;
+  background-image: radial-gradient(
+    closest-side,
+    hsla(0, 0%, 50%, 1.0),
+    hsla(0, 0%, 50%, 0) 100%);
+  position: relative;
+}
+.accessory:after {
+  position: absolute;
+  top:  50%;
+  left: 50%;
+  display:block;
+  background-color: hsl(0, 0%, 75%);
+  height: 12px;
+  width:  12px;
+  transform: rotate(45deg);
+  margin-top:  -10px;
+  margin-left: -10px;
+  border-radius: 4px 0;
+  border: 4px solid hsla(0, 0%, 100%, 0.35);
+  background-clip: padding-box;
+  box-shadow: -10px 10px 0 hsla(0, 0%, 100%, 0.15), 10px -10px 0 hsla(0, 0%, 100%, 0.15);
+}
+
+
+
+
+
+
+.value_explication {
+    margin: 15px 13px;
+    text-align: justify;
+}
+
+.intro, .more {
+    font-size: 1.35rem;
+}
+
+
+
+.check-list {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.check-list li {
+  position: relative;
+  list-style-type: none;
+  padding-left: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.check-list li:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: -11px;
+    top: -2px;
+    width: 15px;
+    height: 27px;
+    border-width: 0 2px 2px 0;
+    border-style: solid;
+    border-color: #00a8a8;
+    transform-origin: bottom left;
+    transform: rotate(45deg);
+}
