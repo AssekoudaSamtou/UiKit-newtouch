@@ -591,3 +591,23 @@ hr {
     transform-origin: bottom left;
     transform: rotate(45deg);
 }
+
+@media screen and (max-width: 320px) {
+	#logo-words .uk-card span {
+		font-style: 17px;
+	}
+
+	#logo-words .uk-align-center {
+		font-style: 10px;
+	}
+}
+
+@media screen and (max-width: 280px) {
+	#logo-words .uk-card span {
+		font-style: 17px;
+	}
+
+	#logo-words .uk-align-center {
+		font-style: 10px;
+	}
+}
